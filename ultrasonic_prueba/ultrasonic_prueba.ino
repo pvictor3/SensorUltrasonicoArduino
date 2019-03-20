@@ -58,8 +58,8 @@ void loop() {
     Serial.print("Tiempo2: ");
     Serial.println(tiempo2);
     delay(1000);
-    continuar1 = false;
-    start1 = false;
+    continuar2 = false;
+    start2 = false;
     start = true;
   }else if(start){
     digitalWrite(trigPinTx1, LOW);
@@ -70,7 +70,7 @@ void loop() {
     start = false;
     interrupts();
   }else{
-    Serial.print("Midiendo");  
+    
   }
 
 }
